@@ -45,7 +45,6 @@ doc/*.tag
 *.out
 *.app
 
-
 ### Eclipse ###
 *.pydevproject
 .metadata
