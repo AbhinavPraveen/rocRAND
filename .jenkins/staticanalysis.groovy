@@ -15,13 +15,13 @@ def runCI =
 
     def prj  = new rocProject('rocRAND', 'StaticAnalysis')
 
-    // Define test architectures, optional rocm version argument is available
+    // Define test architectures, optional ROCm version argument is available
     def nodes = new dockerNodes(nodeDetails, jobName, prj)
 
     boolean formatCheck = false
     boolean staticAnalysis = true
 
-    buildProject(prj , formatCheck, nodes.dockerArray, null, null, null, staticAnalysis)
+    buildProject(prj, formatCheck, nodes.dockerArray, null, null, null, staticAnalysis)
 }
 
 ci: {
